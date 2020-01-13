@@ -68,9 +68,9 @@ class ConverterController: UIViewController {
     
     
     func refreshButtons() { // Изменяет аббревиатуру валют на вьюхе
-        buttonFrom.setTitle(Model.shared.fromCurrency.CharCode, for: UIControl.State.normal)
+        buttonFrom.setTitle("  " + Model.shared.fromCurrency.CharCode!, for: UIControl.State.normal)
         
-        buttonTo.setTitle(Model.shared.toCurrency.CharCode, for: UIControl.State.normal)
+        buttonTo.setTitle("  " + Model.shared.toCurrency.CharCode!, for: UIControl.State.normal)
     }
     
     @IBAction func pushDoneButton(_ sender: Any) {
