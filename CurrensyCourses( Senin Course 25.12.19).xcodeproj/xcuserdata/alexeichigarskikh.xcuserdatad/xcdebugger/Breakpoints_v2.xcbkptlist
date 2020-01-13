@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "432FA60B-75F8-4A53-BE0E-C886269C1463"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12402A6E-A4AE-4025-8E0B-26646782DE92"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "pathForXml"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9128473C-9D11-4ADD-896F-0279CF262C9B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "urlForXml"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A73E034-147A-4C89-BA92-54ABD36BA8B7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "urlForXml"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82C25D51-3128-4CD5-A61D-2E4EDB03A9AE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "Model"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8FD4EA30-449B-4F9D-B62F-D134A01C4C50"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "pathForXml"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12EDA0B9-C7F5-4C26-B4A6-C90F162375DB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "pathForXml"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A08DF37B-30A4-421E-A091-3EA31553DF13"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "pathForXml"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FDAC6840-0F7A-41C6-8EB9-6CC2B170E4AA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "loadXmlFile(date:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "601428B3-2235-45A5-BD51-B5A878637FC2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "loadXmlFile(date:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B00B3BFB-3E8A-4215-B6A5-2733A18FC054"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "parser(_:didStartElement:namespaceURI:qualifiedName:attributes:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8003816D-7F7E-4CC9-9105-C993F260D407"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "parser(_:didStartElement:namespaceURI:qualifiedName:attributes:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E4715F1-1537-481F-859C-485A2BE7AB21"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "loadXmlFile(date:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9C00B16-43CE-451D-9652-DC3441CFFC0F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "loadXmlFile(date:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "079816E0-5775-4F8A-90B6-AC3879EFE132"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "loadXmlFile(date:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "85B6DD77-5D09-43AB-BE6B-A07178375085"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "loadXmlFile(date:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32A9F36B-E052-492F-8335-181E6DD2FDFD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "loadXmlFile(date:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "32A9F36B-E052-492F-8335-181E6DD2FDFD - a6199e21eabc2b3a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrensyCourses__Senin_Course_25_12_19_.Model.loadXmlFile(date: Swift.Optional&lt;Foundation.Date&gt;) -&gt; ()"
+                  moduleName = "CurrensyCourses( Senin Course 25.12.19)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeichigarskikh/Documents/Xcode%20and%20Swift/CurrensyCourses(%20Senin%20Course%2025.12.19)/CurrensyCourses(%20Senin%20Course%2025.12.19)/Model.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "1924">
+               </Location>
+               <Location
+                  uuid = "32A9F36B-E052-492F-8335-181E6DD2FDFD - c7568697fbcf6201"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CurrensyCourses__Senin_Course_25_12_19_.Model.loadXmlFile(date: Swift.Optional&lt;Foundation.Date&gt;) -&gt; ()"
+                  moduleName = "CurrensyCourses( Senin Course 25.12.19)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeichigarskikh/Documents/Xcode%20and%20Swift/CurrensyCourses(%20Senin%20Course%2025.12.19)/CurrensyCourses(%20Senin%20Course%2025.12.19)/Model.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "233">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "440CB695-0C0D-4D63-B2AD-C0378447A7FB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/ConverterController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "TextFromEditingChanged(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "671FB949-1EC4-4FBD-9F23-425FCA0FD6DB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "convert(amount:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F6240F04-D6AB-4283-BC77-27FAC896BC6A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/SelectCurrencyController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "23DA9F77-B3C1-49E0-A693-8C0ED0083343"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/ConverterController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "pushButtonTo(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "23DA9F77-B3C1-49E0-A693-8C0ED0083343 - 89e32ef53f417f35"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrensyCourses__Senin_Course_25_12_19_.ConverterController.textFrom.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "CurrensyCourses( Senin Course 25.12.19)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeichigarskikh/Documents/Xcode%20and%20Swift/CurrensyCourses(%20Senin%20Course%2025.12.19)/CurrensyCourses(%20Senin%20Course%2025.12.19)/ConverterController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "23DA9F77-B3C1-49E0-A693-8C0ED0083343 - f043c782f8027f39"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrensyCourses__Senin_Course_25_12_19_.ConverterController.textFrom.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "CurrensyCourses( Senin Course 25.12.19)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeichigarskikh/Documents/Xcode%20and%20Swift/CurrensyCourses(%20Senin%20Course%2025.12.19)/CurrensyCourses(%20Senin%20Course%2025.12.19)/ConverterController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "23DA9F77-B3C1-49E0-A693-8C0ED0083343 - 75b37b7a9ce0ff3f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrensyCourses__Senin_Course_25_12_19_.ConverterController.textFrom.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "CurrensyCourses( Senin Course 25.12.19)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeichigarskikh/Documents/Xcode%20and%20Swift/CurrensyCourses(%20Senin%20Course%2025.12.19)/CurrensyCourses(%20Senin%20Course%2025.12.19)/ConverterController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "23DA9F77-B3C1-49E0-A693-8C0ED0083343 - 6571c1ebec40d28f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrensyCourses__Senin_Course_25_12_19_.ConverterController.textFrom.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CurrensyCourses( Senin Course 25.12.19)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeichigarskikh/Documents/Xcode%20and%20Swift/CurrensyCourses(%20Senin%20Course%2025.12.19)/CurrensyCourses(%20Senin%20Course%2025.12.19)/ConverterController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "23DA9F77-B3C1-49E0-A693-8C0ED0083343 - 3fe90886e4322984"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrensyCourses__Senin_Course_25_12_19_.ConverterController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CurrensyCourses__Senin_Course_25_12_19_.ConverterController"
+                  moduleName = "CurrensyCourses( Senin Course 25.12.19)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeichigarskikh/Documents/Xcode%20and%20Swift/CurrensyCourses(%20Senin%20Course%2025.12.19)/CurrensyCourses(%20Senin%20Course%2025.12.19)/ConverterController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "579">
+               </Location>
+               <Location
+                  uuid = "23DA9F77-B3C1-49E0-A693-8C0ED0083343 - dfa25c85cf7e6760"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrensyCourses__Senin_Course_25_12_19_.ConverterController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CurrensyCourses__Senin_Course_25_12_19_.ConverterController&gt;"
+                  moduleName = "CurrensyCourses( Senin Course 25.12.19)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeichigarskikh/Documents/Xcode%20and%20Swift/CurrensyCourses(%20Senin%20Course%2025.12.19)/CurrensyCourses(%20Senin%20Course%2025.12.19)/ConverterController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "511">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
