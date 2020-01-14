@@ -18,6 +18,14 @@ class ConverterController: UIViewController {
     
     @IBOutlet weak var buttonTo: UIButton!
     
+    
+    
+    @IBAction func replaceCurrenCurrencies(_ sender: Any) {
+        replacingFromToToCurrencies()
+        refreshButtons()
+    }
+    
+    
     @IBAction func pushButtonFrom(_ sender: Any) {
         let nc = storyboard?.instantiateViewController(withIdentifier: "selectedCurrencyNSID") as! UINavigationController
         (nc.viewControllers[0] as! SelectCurrencyController).flagCurrency = .from
@@ -79,6 +87,18 @@ class ConverterController: UIViewController {
        
         
         }
+    
+    fileprivate func replacingFromToToCurrencies() {
+        let replacedCurrency: Currency = Model.shared.fromCurrency
+        var replacedTextField: String? = nil
+        Model.shared.fromCurrency = Model.shared.toCurrency
+        Model.shared.toCurrency = replacedCurrency
+        replacedTextField = textFrom.text
+        textFrom.text = textTo.text
+        textTo.text = replacedTextField
+        // and call refreshButtons()
+    }
+    
     
 
 }

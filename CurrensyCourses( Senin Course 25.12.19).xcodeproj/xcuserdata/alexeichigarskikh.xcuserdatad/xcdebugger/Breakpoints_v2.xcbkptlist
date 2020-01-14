@@ -302,8 +302,8 @@
             filePath = "CurrensyCourses( Senin Course 25.12.19)/ConverterController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "TextFromEditingChanged(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -350,9 +350,9 @@
             filePath = "CurrensyCourses( Senin Course 25.12.19)/ConverterController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "pushButtonTo(_:)"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "pushButtonFrom(_:)"
             landmarkType = "7">
             <Locations>
                <Location
