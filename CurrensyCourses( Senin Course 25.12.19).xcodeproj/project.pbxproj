@@ -20,6 +20,7 @@
 		32434D2B23C529550037B4D8 /* SelectCurrencyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32434D2A23C529550037B4D8 /* SelectCurrencyController.swift */; };
 		32434D2D23C696A20037B4D8 /* CellControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32434D2C23C696A20037B4D8 /* CellControllerTableViewCell.swift */; };
 		3285BB6623C7C20A0079F250 /* CellConverterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285BB6523C7C20A0079F250 /* CellConverterController.swift */; };
+		329B03E723CE567E00E0CE9D /* RUBCon.png in Resources */ = {isa = PBXBuildFile; fileRef = 329B03E623CE567E00E0CE9D /* RUBCon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		32434D2A23C529550037B4D8 /* SelectCurrencyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyController.swift; sourceTree = "<group>"; };
 		32434D2C23C696A20037B4D8 /* CellControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellControllerTableViewCell.swift; sourceTree = "<group>"; };
 		3285BB6523C7C20A0079F250 /* CellConverterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConverterController.swift; sourceTree = "<group>"; };
+		329B03E623CE567E00E0CE9D /* RUBCon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RUBCon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				32434D2A23C529550037B4D8 /* SelectCurrencyController.swift */,
 				3285BB6523C7C20A0079F250 /* CellConverterController.swift */,
 				32434D1123B3C1380037B4D8 /* Assets.xcassets */,
+				329B03E623CE567E00E0CE9D /* RUBCon.png */,
 				32434D1323B3C1380037B4D8 /* LaunchScreen.storyboard */,
 				32434D1623B3C1380037B4D8 /* Info.plist */,
 				32434D2023B3C39D0037B4D8 /* date.xml */,
@@ -148,6 +151,7 @@
 			files = (
 				32434D1523B3C1380037B4D8 /* LaunchScreen.storyboard in Resources */,
 				32434D2123B3C39D0037B4D8 /* date.xml in Resources */,
+				329B03E723CE567E00E0CE9D /* RUBCon.png in Resources */,
 				32434D1223B3C1380037B4D8 /* Assets.xcassets in Resources */,
 				32434D1023B3C1360037B4D8 /* Main.storyboard in Resources */,
 			);
