@@ -15,11 +15,14 @@ class CellControllerTableViewCell: UITableViewCell {
     @IBOutlet weak var labelCourse: UILabel!
     
     func initCell (currency: Currency) {
+
         imageFlag.image = currency.imageFlag
 //        imageFlag.layer.cornerRadius = imageFlag.frame.size.width / 2
 //        imageFlag.clipsToBounds = true
         lableCurrencyName.text = currency.Name
+        
         labelCourse.text = currency.Value
+        
     }
     override func awakeFromNib() {
         super.awakeFromNib()

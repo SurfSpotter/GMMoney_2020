@@ -52,7 +52,7 @@ class ConverterController: UIViewController {
     @IBAction func TextFromEditingChanged(_ sender: Any) {
          let amount = Double(textFrom.text!)
         if amount != nil {
-            textTo.text = Model.shared.convert(amount: amount)
+            textTo.text = String(roundedTo0x00(amount: amount!))
         }
         if amount == nil {
             textTo.text = ""
@@ -62,7 +62,8 @@ class ConverterController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textFrom.delegate = self    // This is for Showing Done Button (Delegate)
+        textFrom.delegate = self // This is for Showing Done Button (Delegate)
+        
     }
     
     
@@ -76,9 +77,9 @@ class ConverterController: UIViewController {
     
     
     func refreshButtons() { // Изменяет аббревиатуру валют на вьюхе
-        buttonFrom.setTitle("  " + Model.shared.fromCurrency.CharCode!, for: UIControl.State.normal)
+        buttonFrom.setTitle(Model.shared.fromCurrency.CharCode!, for: UIControl.State.normal)
         
-        buttonTo.setTitle("  " + Model.shared.toCurrency.CharCode!, for: UIControl.State.normal)
+        buttonTo.setTitle(Model.shared.toCurrency.CharCode!, for: UIControl.State.normal)
     }
     
     @IBAction func pushDoneButton(_ sender: Any) {
@@ -87,8 +88,8 @@ class ConverterController: UIViewController {
        
         
         }
-    
-    fileprivate func replacingFromToToCurrencies() {
+    // MARK:- Functions
+    fileprivate func replacingFromToToCurrencies() {  //перемещение валют при нажатии кнопки
         let replacedCurrency: Currency = Model.shared.fromCurrency
         var replacedTextField: String? = nil
         Model.shared.fromCurrency = Model.shared.toCurrency
@@ -99,8 +100,11 @@ class ConverterController: UIViewController {
         // and call refreshButtons()
     }
     
+    func roundedTo0x00 (amount: Double) -> Double {     // Округление до сотых
+        let roundedAmount = round(Double(Model.shared.convert(amount: amount))! * 100) / 100
+        return roundedAmount
+    }
     
-
 }
 
 extension ConverterController: UITextFieldDelegate {      // Show Button Done when textFrom is Should Begining

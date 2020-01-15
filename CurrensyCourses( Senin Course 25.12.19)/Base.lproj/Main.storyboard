@@ -154,20 +154,11 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="734"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfb-d5-Ify">
-                                <rect key="frame" x="34" y="215" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="   RUR" backgroundImage="coin"/>
-                                <connections>
-                                    <action selector="pushButtonFrom:" destination="HWQ-aX-swB" eventType="touchUpInside" id="uSx-vD-DPd"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2k-r2-lHB">
-                                <rect key="frame" x="266" y="215" width="128" height="128"/>
+                                <rect key="frame" x="299" y="231" width="95" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="   RUR" backgroundImage="coin"/>
+                                <state key="normal" title="RUR" backgroundImage="nil"/>
                                 <connections>
                                     <action selector="pushButtonTo:" destination="HWQ-aX-swB" eventType="touchUpInside" id="9Q1-3B-i4f"/>
                                 </connections>
@@ -202,10 +193,15 @@
                                     <action selector="replaceCurrenCurrencies:" destination="HWQ-aX-swB" eventType="touchUpInside" id="bbN-Fb-EwE"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RUBCon.png" translatesAutoresizingMaskIntoConstraints="NO" id="aXp-wT-k8k">
-                                <rect key="frame" x="20" y="442" width="112" height="59"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfb-d5-Ify">
+                                <rect key="frame" x="35" y="231" width="111" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="RUR" backgroundImage="nil"/>
+                                <connections>
+                                    <action selector="pushButtonFrom:" destination="HWQ-aX-swB" eventType="touchUpInside" id="uSx-vD-DPd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="2Dq-b1-4LO"/>
@@ -364,11 +360,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="RUBCon.png" width="626" height="410"/>
         <image name="backGround" width="512" height="512"/>
         <image name="buttonConvert" width="64" height="64"/>
         <image name="calendar" catalog="system" width="64" height="52"/>
-        <image name="coin" width="128" height="128"/>
+        <image name="nil" width="16" height="16"/>
         <image name="tab1" width="25" height="25"/>
         <image name="tab2" width="25" height="25"/>
     </resources>
