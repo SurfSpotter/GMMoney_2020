@@ -14,14 +14,15 @@ class CellControllerTableViewCell: UITableViewCell {
     @IBOutlet weak var lableCurrencyName: UILabel!
     @IBOutlet weak var labelCourse: UILabel!
     
+   
     func initCell (currency: Currency) {
 
         imageFlag.image = currency.imageFlag
 //        imageFlag.layer.cornerRadius = imageFlag.frame.size.width / 2
 //        imageFlag.clipsToBounds = true
         lableCurrencyName.text = currency.Name
-        
-        labelCourse.text = currency.Value
+        initRoundedCourses(currency)
+    
         
     }
     override func awakeFromNib() {
@@ -35,4 +36,11 @@ class CellControllerTableViewCell: UITableViewCell {
 
         
     }
+    fileprivate func initRoundedCourses(_ currency: Currency) {
+           if currency.valueDouble != nil {
+               let roundedAmount = round(Double(currency.valueDouble!) * 100) / 100  //Rounded
+               labelCourse.text = String(roundedAmount) + " ₽"  // insert dara and ruble symbol
+           } else { labelCourse.text = currency.Value}
+       }
+       
 }

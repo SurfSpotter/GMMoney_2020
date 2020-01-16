@@ -100,7 +100,7 @@ class ConverterController: UIViewController {
         // and call refreshButtons()
     }
     
-    func roundedTo0x00 (amount: Double) -> Double {     // Округление до сотых
+    func roundedTo0x00 (amount: Double) -> Double {// Округление до сотых
         let roundedAmount = round(Double(Model.shared.convert(amount: amount))! * 100) / 100
         return roundedAmount
     }
