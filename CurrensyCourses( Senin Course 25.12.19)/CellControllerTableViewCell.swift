@@ -13,8 +13,11 @@ class CellControllerTableViewCell: UITableViewCell {
     @IBOutlet weak var imageFlag: UIImageView!
     @IBOutlet weak var lableCurrencyName: UILabel!
     @IBOutlet weak var labelCourse: UILabel!
+    @IBOutlet weak var nominalLabel: UILabel!
     
    
+    
+    
     func initCell (currency: Currency) {
 
         imageFlag.image = currency.imageFlag
@@ -22,7 +25,7 @@ class CellControllerTableViewCell: UITableViewCell {
 //        imageFlag.clipsToBounds = true
         lableCurrencyName.text = currency.Name
         initRoundedCourses(currency)
-    
+        initNominalLabel(currency)
         
     }
     override func awakeFromNib() {
@@ -42,5 +45,13 @@ class CellControllerTableViewCell: UITableViewCell {
                labelCourse.text = String(roundedAmount) + " ₽"  // insert dara and ruble symbol
            } else { labelCourse.text = currency.Value}
        }
+    fileprivate func initNominalLabel(_ currency: Currency) {   // показ номинала который не равен 1
+        let unwrappingNominal = currency.Nominal                // заполнение поля "номинал"
+        if let unwrappingNominal = unwrappingNominal {
+            if Int(unwrappingNominal) != 1 {
+                nominalLabel.text = unwrappingNominal + (currency.CharCode ?? "X")  }
+            else { nominalLabel.text = currency.CharCode ?? "X" }
+        }
+    }
        
 }
