@@ -57,7 +57,8 @@ class Model: NSObject, XMLParserDelegate {
         if amount == nil {
             return " "
         }
-        let d = ((fromCurrency.nominalDouble! * fromCurrency.valueDouble!) / (toCurrency.nominalDouble! * toCurrency.valueDouble!) ) * amount!
+       
+        let d = ((fromCurrency.valueDouble! / fromCurrency.nominalDouble!) / (toCurrency.valueDouble! / toCurrency.nominalDouble!)) * amount!
         
         return String(d)
     }
