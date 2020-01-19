@@ -27,6 +27,7 @@ class CellControllerTableViewCell: UITableViewCell {
         initRoundedCourses(currency)
         initNominalLabel(currency)
         
+        
     }
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -49,8 +50,12 @@ class CellControllerTableViewCell: UITableViewCell {
         let unwrappingNominal = currency.Nominal                // заполнение поля "номинал"
         if let unwrappingNominal = unwrappingNominal {
             if Int(unwrappingNominal) != 1 {
-                nominalLabel.text = unwrappingNominal + (currency.CharCode ?? "X")  }
-            else { nominalLabel.text = currency.CharCode ?? "X" }
+               // nominalLabel.text = unwrappingNominal + (currency.CharCode ?? "X")  }
+                nominalLabel.text = "X" + unwrappingNominal }
+            else {
+                //nominalLabel.text = currency.CharCode ?? "X"
+                nominalLabel.text = ""
+            }
         }
     }
        

@@ -143,7 +143,6 @@ class Model: NSObject, XMLParserDelegate {
         let parser = XMLParser(contentsOf: urlForXml)
         parser?.delegate = self   // delegate needed
         parser?.parse()
-        
         print ("Data refreshed")
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "dataRefreshed"), object: self) // уведомление о том что спарсилос, рассылается по всему приложению
         

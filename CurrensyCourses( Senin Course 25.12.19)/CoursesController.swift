@@ -85,15 +85,18 @@ class CoursesController: UITableViewController {
        
         return Model.shared.currencys.count
     }
+    
 
   
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CellControllerTableViewCell
         let cellForCourses = Model.shared.currencys[indexPath.row]
-        
         cell.initCell(currency: cellForCourses)
-        //tableView.rowHeight = 75.0
         
+        
+        hideRUBCurrency(cellForCourses, cell, tableView)
         
 //        cell.textLabel?.text = cellForCourses.Name
 //        cell.detailTextLabel?.text = cellForCourses.Value
@@ -101,7 +104,15 @@ class CoursesController: UITableViewController {
         return cell
     }
     
-
-    
+// Mark: Function to hide Rub currency in Main Page
+   fileprivate func hideRUBCurrency(_ cellForCourses: Currency, _ cell: CellControllerTableViewCell, _ tableView: UITableView) {
+        if cellForCourses.CharCode == "RUB" {
+            cell.isHidden = true
+            self.tableView.rowHeight = 0.0
+        }
+        else { tableView.rowHeight = 80.0
+            
+        }
+    }
 
 }
