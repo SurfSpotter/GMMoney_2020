@@ -72,7 +72,7 @@ class ConverterController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         refreshButtons()
         TextFromEditingChanged(self)
-        labelCoursesForDate.text = (Model.shared.currentDate!)
+        labelCoursesForDate.text = Model.shared.currentDate!
         navigationItem.rightBarButtonItem = nil 
         
     }

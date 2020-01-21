@@ -259,7 +259,7 @@ class Model: NSObject, XMLParserDelegate {
         case .orderedSame:
             return "Курсы валют на сегодня"
         case .orderedDescending:
-            return currentDateString
+            return "Курсы валют на \(currentDateString)"
         }
         
         
