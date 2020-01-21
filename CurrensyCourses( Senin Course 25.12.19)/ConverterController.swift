@@ -18,7 +18,9 @@ class ConverterController: UIViewController {
     
     @IBOutlet weak var buttonTo: UIButton!
     
+    @IBOutlet weak var imageFrom: UIImageView!
     
+    @IBOutlet weak var imageTo: UIImageView!
     
     @IBAction func replaceCurrenCurrencies(_ sender: Any) {
         replacingFromToToCurrencies()
@@ -70,7 +72,7 @@ class ConverterController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         refreshButtons()
         TextFromEditingChanged(self)
-        labelCoursesForDate.text = "Курсы валют за \(Model.shared.currentDate!)"
+        labelCoursesForDate.text = (Model.shared.currentDate!)
         navigationItem.rightBarButtonItem = nil 
         
     }
@@ -78,8 +80,9 @@ class ConverterController: UIViewController {
     
     func refreshButtons() { // Изменяет аббревиатуру валют на вьюхе
         buttonFrom.setTitle(Model.shared.fromCurrency.CharCode!, for: UIControl.State.normal)
-        
         buttonTo.setTitle(Model.shared.toCurrency.CharCode!, for: UIControl.State.normal)
+        imageFrom.image = UIImage(named: Model.shared.fromCurrency.CharCode!)
+        imageTo.image = UIImage(named: Model.shared.toCurrency.CharCode!)
     }
     
     @IBAction func pushDoneButton(_ sender: Any) {

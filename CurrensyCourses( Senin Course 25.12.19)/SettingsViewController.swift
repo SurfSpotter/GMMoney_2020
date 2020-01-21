@@ -9,7 +9,7 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    static let shared = SettingsViewController()
     @IBOutlet weak var datePicker: UIDatePicker!
     
     

@@ -54,6 +54,7 @@ class SelectCurrencyController: UITableViewController {
         
         if flagCurrency == .from {
             Model.shared.fromCurrency = selectedCurrency
+            
         }
         
         if flagCurrency == .to {

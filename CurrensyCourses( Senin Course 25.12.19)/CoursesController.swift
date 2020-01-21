@@ -15,7 +15,6 @@ class CoursesController: UITableViewController {
         
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,7 +55,7 @@ class CoursesController: UITableViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        //Model.shared.loadXmlFile(date: nil)
+        Model.shared.loadXmlFile(date: nil)
     }
 // MARK: - Alert when Error load XML File
     
