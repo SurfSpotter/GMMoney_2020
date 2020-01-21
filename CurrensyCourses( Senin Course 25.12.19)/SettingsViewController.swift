@@ -14,6 +14,7 @@ class SettingsViewController: UIViewController {
     
     
     @IBAction func datePickerAction(_ sender: Any) {
+        datePicker.setMaxDateisTodayDate()
     }
     
     
@@ -31,7 +32,23 @@ class SettingsViewController: UIViewController {
 
         
     }
-    
-
 
 }
+
+
+//MARK: Ограничения по минимальной и максимальной дате для UIDatePicker
+extension UIDatePicker {
+func setMaxDateisTodayDate() {
+    let currentDate: Date = Date()
+    var calendar: Calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+    calendar.timeZone = TimeZone(identifier: "UTC")!
+    var components: DateComponents = DateComponents()
+    components.calendar = calendar
+    components.year = 0
+    let maxDate: Date = calendar.date(byAdding: components, to: currentDate)!
+    components.year = -22
+    let minDate: Date = calendar.date(byAdding: components, to: currentDate)!
+    self.minimumDate = minDate
+    self.maximumDate = maxDate
+    } }
+    
