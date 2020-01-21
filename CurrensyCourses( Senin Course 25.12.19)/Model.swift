@@ -71,7 +71,9 @@ class Model: NSObject, XMLParserDelegate {
         let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.libraryDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0]+"/data.xml"  //поиск пути к файлу
         
         if FileManager.default.fileExists(atPath: path) {  // проверяет есть ли такой файл
+            print(path)
             return path
+            
         }
         return Bundle.main.path(forResource: "date", ofType: "xml")! // если файла нет, то эта команда возвращает дефолтный файл
         
@@ -164,10 +166,14 @@ class Model: NSObject, XMLParserDelegate {
     
     var currentCurrency : Currency?
     var currentCharacter:String?
+    
+    
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         if elementName == "ValCurs" {
             if let currentDateString = attributeDict["Date"] {
-                currentDate = currentDateString  // Прописываем дату из XML 
+            
+            currentDate = todayDateVsDateFromXML(currentDateString) // Прописываем дату из XML или пишем "курсы валют на сегодня"
+                
                 
             }
         }
@@ -228,4 +234,25 @@ class Model: NSObject, XMLParserDelegate {
             currencys.append(currentCurrency!)
         }
 
-    }}
+    }
+    
+    
+    
+    
+//MARK:-  эта функция сравнивает сегодняшнюю дату с датой в XML файле и возвращает в случае совпадение строковое значение "курсы валют на сегодня"
+    
+    
+    fileprivate func todayDateVsDateFromXML(_ currentDateString: String) -> String {
+        
+        let todaysDate = NSDate()
+        let dateFormatterTodayDate = DateFormatter()
+        dateFormatterTodayDate.dateFormat = "dd.MM.yyyy"
+        let todayDateInString = dateFormatterTodayDate.string(from: todaysDate as Date)
+        if currentDateString == todayDateInString {
+            return "Курсы валют на сегодня"
+        }
+        return currentDateString
+        
+    }
+    
+}
