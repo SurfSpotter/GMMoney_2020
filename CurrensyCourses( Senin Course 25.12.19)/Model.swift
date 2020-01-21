@@ -171,7 +171,7 @@ class Model: NSObject, XMLParserDelegate {
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         if elementName == "ValCurs" {
             if let currentDateString = attributeDict["Date"] {
-            
+                
             currentDate = todayDateVsDateFromXML(currentDateString) // Прописываем дату из XML или пишем "курсы валют на сегодня"
                 
                 
@@ -242,16 +242,26 @@ class Model: NSObject, XMLParserDelegate {
 //MARK:-  эта функция сравнивает сегодняшнюю дату с датой в XML файле и возвращает в случае совпадение строковое значение "курсы валют на сегодня"
     
     
-    fileprivate func todayDateVsDateFromXML(_ currentDateString: String) -> String {
+    func todayDateVsDateFromXML(_ currentDateString: String) -> String {
+        
         
         let todaysDate = NSDate()
         let dateFormatterTodayDate = DateFormatter()
         dateFormatterTodayDate.dateFormat = "dd.MM.yyyy"
         let todayDateInString = dateFormatterTodayDate.string(from: todaysDate as Date)
-        if currentDateString == todayDateInString {
+        
+        //let dateInXml: Date  = dateFormatterTodayDate.date(from: currentDateString) ?? todaysDate as Date
+        
+        switch todayDateInString.compare(currentDateString) {
+            
+        case .orderedAscending:
             return "Курсы валют на сегодня"
+        case .orderedSame:
+            return "Курсы валют на сегодня"
+        case .orderedDescending:
+            return currentDateString
         }
-        return currentDateString
+        
         
     }
     
