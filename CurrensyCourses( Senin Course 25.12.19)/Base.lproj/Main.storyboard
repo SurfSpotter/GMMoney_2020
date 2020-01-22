@@ -179,7 +179,9 @@
                                 <rect key="frame" x="294" y="293" width="72" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="RUR"/>
+                                <state key="normal" title="RUR">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pushButtonTo:" destination="HWQ-aX-swB" eventType="touchUpInside" id="9Q1-3B-i4f"/>
                                 </connections>
@@ -188,7 +190,7 @@
                                 <rect key="frame" x="57" y="150" width="314" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8gA-33-RRv">
@@ -210,7 +212,9 @@
                                 <rect key="frame" x="46" y="294" width="74" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="RUR"/>
+                                <state key="normal" title="RUR">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
                                 <connections>
                                     <action selector="pushButtonFrom:" destination="HWQ-aX-swB" eventType="touchUpInside" id="uSx-vD-DPd"/>
                                 </connections>
@@ -393,6 +397,7 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tzB-Pe-DRD">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.80007070300000005" green="0.79989200829999996" blue="0.80784422160000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <items>
                                     <navigationItem title="Настройки" id="VSz-DI-4Oh"/>
                                 </items>
@@ -413,11 +418,12 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.80007070300000005" green="0.79989200829999996" blue="0.80784422160000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="NAf-c4-ZlK"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Настройки" image="info.circle" catalog="system" id="hzS-5W-hrO"/>
                     <connections>
+                        <outlet property="imageOutlet" destination="hfO-iG-kQi" id="jqp-Fa-nRh"/>
                         <outlet property="switchOffBanner" destination="mOQ-WF-iqa" id="EOH-NK-mk7"/>
                         <outlet property="writeTodeveloper" destination="AQB-FD-3ir" id="GXh-bg-qJa"/>
                     </connections>

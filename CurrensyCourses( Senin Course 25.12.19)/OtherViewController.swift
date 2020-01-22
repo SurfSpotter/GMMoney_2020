@@ -22,6 +22,7 @@ class OtherViewController: UIViewController {
     @IBAction func writeToDeveloperAction(_ sender: Any) {
     }
     
+    @IBOutlet weak var imageOutlet: UIImageView!
     
    
     
@@ -34,11 +35,11 @@ class OtherViewController: UIViewController {
         
         
         
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
        animationOfButton(item: switchOffBanner)
+        
     }
 
     fileprivate func changeStyleOfButtons(Button: UIButton) {
@@ -52,7 +53,19 @@ class OtherViewController: UIViewController {
         let item = item
         UIView.animate(withDuration: 0.6,
         animations: {
-            item.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+            item.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+        },
+        completion: { _ in
+            UIView.animate(withDuration: 0.6) {
+                item.transform = CGAffineTransform.identity
+            }
+        })
+    }
+    fileprivate func animationOfImage(item: UIImageView ) {
+        let item = item
+        UIView.animate(withDuration: 0.6,
+        animations: {
+            item.transform = CGAffineTransform(scaleX: 0.01, y: 0.95)
         },
         completion: { _ in
             UIView.animate(withDuration: 0.6) {
