@@ -241,7 +241,6 @@ class Model: NSObject, XMLParserDelegate {
     
 //MARK:-  эта функция сравнивает сегодняшнюю дату с датой в XML файле и возвращает в случае совпадение строковое значение "курсы валют на сегодня"
     
-    
     func todayDateVsDateFromXML(_ currentDateString: String) -> String {
         
         

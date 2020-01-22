@@ -73,7 +73,10 @@ class ConverterController: UIViewController {
         refreshButtons()
         TextFromEditingChanged(self)
         labelCoursesForDate.text = Model.shared.currentDate!
-        navigationItem.rightBarButtonItem = nil 
+        navigationItem.rightBarButtonItem = nil
+        
+        OtherViewController.shared.animationOfButton(item: buttonFrom)
+        OtherViewController.shared.animationOfButton(item: buttonTo)
         
     }
     
