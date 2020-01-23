@@ -11,6 +11,7 @@ import UIKit
 class OtherViewController: UIViewController {
  static let shared = OtherViewController()
     
+   let shareManager = ShareManager()
     
     @IBOutlet weak var switchOffBanner: UIButton!
     
@@ -20,10 +21,14 @@ class OtherViewController: UIViewController {
     }
     
     @IBAction func writeToDeveloperAction(_ sender: Any) {
+        
+        shareManager.sendMail(recepients: ["mukasor@gmail.com"], subject: "Feedback from Currency Courses", text:  "", vc: self) 
     }
     
     
     @IBAction func developerWebsite(_ sender: Any) {
+       guard let url = URL(string: "http://surfspotdevelopco.tilda.ws") else { return }
+       UIApplication.shared.open(url)
     }
     
    
@@ -32,6 +37,8 @@ class OtherViewController: UIViewController {
     
     
     @IBAction func shareAction(_ sender: Any) {
+        
+        
     }
     
     @IBOutlet weak var imageOutlet: UIImageView!
