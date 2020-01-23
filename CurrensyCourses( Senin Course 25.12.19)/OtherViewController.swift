@@ -22,6 +22,18 @@ class OtherViewController: UIViewController {
     @IBAction func writeToDeveloperAction(_ sender: Any) {
     }
     
+    
+    @IBAction func developerWebsite(_ sender: Any) {
+    }
+    
+   
+    @IBAction func rateApp(_ sender: Any) {
+    }
+    
+    
+    @IBAction func shareAction(_ sender: Any) {
+    }
+    
     @IBOutlet weak var imageOutlet: UIImageView!
     
    
@@ -30,7 +42,7 @@ class OtherViewController: UIViewController {
         super.viewDidLoad()
         
         changeStyleOfButtons(Button: switchOffBanner)
-        changeStyleOfButtons(Button: writeTodeveloper)
+
         
         
         
