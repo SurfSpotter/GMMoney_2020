@@ -22,12 +22,11 @@ class OtherViewController: UIViewController {
     
     @IBAction func writeToDeveloperAction(_ sender: Any) {
         
-        shareManager.sendMail(recepients: ["mukasor@gmail.com"], subject: "Feedback from Currency Courses", text:  "", vc: self) 
     }
     
     
     @IBAction func developerWebsite(_ sender: Any) {
-       guard let url = URL(string: "http://surfspotdevelopco.tilda.ws") else { return }
+       guard let url = URL(string: "http://surfspotdeveopco.tilda.ws") else { return }
        UIApplication.shared.open(url)
     }
     
