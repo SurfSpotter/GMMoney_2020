@@ -26,6 +26,9 @@ class OtherViewController: UIViewController {
     
     
     @IBAction func developerWebsite(_ sender: Any) {
+        if let url = URL(string: "http://surfspotdevelopco.tilda.ws") {
+            UIApplication.shared.open(url)
+        }
     }
     
    
