@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class OtherViewController: UIViewController {
  static let shared = OtherViewController()
@@ -20,7 +21,7 @@ class OtherViewController: UIViewController {
     }
     
     @IBAction func writeToDeveloperAction(_ sender: Any) {
-        
+        showMailComposer()
     }
     
     
@@ -89,4 +90,27 @@ class OtherViewController: UIViewController {
             }
         })
     }
+    
+    //MARK: - Send Mail Function
+    
+    fileprivate func showMailComposer() {
+        guard MFMailComposeViewController.canSendMail() else {
+            let alert = UIAlertController.init(title: "Error", message: "Your device is not tuned, for send mail", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (UIAlertAction) in
+                
+            }))
+            present(alert, animated: true)
+            return
+        }
+        let composer = MFMailComposeViewController()
+        composer.mailComposeDelegate = self
+        composer.setToRecipients(["alexei.evg@gmail.com", "mukasor@gmail.com"])
+        composer.setSubject("World Money")
+        composer.setMessageBody("HI your App is very good, but if you want make your App more better..", isHTML: false)
+        present(composer, animated: true)
+    }
+}
+
+extension OtherViewController: MFMailComposeViewControllerDelegate {
+    
 }
