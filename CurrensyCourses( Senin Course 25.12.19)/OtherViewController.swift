@@ -11,7 +11,6 @@ import UIKit
 class OtherViewController: UIViewController {
  static let shared = OtherViewController()
     
-   let shareManager = ShareManager()
     
     @IBOutlet weak var switchOffBanner: UIButton!
     
@@ -26,12 +25,11 @@ class OtherViewController: UIViewController {
     
     
     @IBAction func developerWebsite(_ sender: Any) {
-       guard let url = URL(string: "http://surfspotdeveopco.tilda.ws") else { return }
-       UIApplication.shared.open(url)
     }
     
    
     @IBAction func rateApp(_ sender: Any) {
+        RateManager.ShowRateItApp()
     }
     
     

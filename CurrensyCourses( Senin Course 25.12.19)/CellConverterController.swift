@@ -22,10 +22,7 @@ class CellConverterController: UITableViewCell {
     func initCell(currency: Currency)
     {
     imageFlag.image = currency.imageFlag
-    //imageFlag.layer.cornerRadius = imageFlag.frame.size.width / 2
-    //imageFlag.clipsToBounds = true
     nameLabel.text = currency.Name
-    //labelCourse.text = currency.Value
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

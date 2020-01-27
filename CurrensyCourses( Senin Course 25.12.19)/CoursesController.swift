@@ -17,7 +17,8 @@ class CoursesController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        RateManager.ShowRateItAppByCount() // Оценить приложение
+        print(UserDefaults.standard.integer(forKey: "runCount"))
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "startLoadingXML"), object: nil, queue: nil) { (Notification) in
             DispatchQueue.main.async {
                 let activityIndicator = UIActivityIndicatorView(style: .medium) // устанавливаем крутилку
