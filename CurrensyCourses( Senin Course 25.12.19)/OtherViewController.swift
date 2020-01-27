@@ -13,7 +13,6 @@ class OtherViewController: UIViewController {
  static let shared = OtherViewController()
     
     
-    @IBOutlet weak var switchOffBanner: UIButton!
     
     @IBOutlet weak var writeTodeveloper: UIButton!
     
@@ -38,7 +37,11 @@ class OtherViewController: UIViewController {
     
     
     @IBAction func shareAction(_ sender: Any) {
-        
+        if let image = UIImage(named: "iconCircleAngles") {
+            let vc = UIActivityViewController(activityItems: [image], applicationActivities: [])
+            present(vc, animated: true)
+        }
+
         
     }
     
@@ -49,7 +52,6 @@ class OtherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        changeStyleOfButtons(Button: switchOffBanner)
 
         
         
@@ -58,7 +60,6 @@ class OtherViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-       animationOfButton(item: switchOffBanner)
         
     }
 
@@ -69,7 +70,7 @@ class OtherViewController: UIViewController {
         button.layer.cornerRadius = 20.0
            button.clipsToBounds = true
        }
-    func animationOfButton(item: UIButton) {
+    func animation(item: UIImageView) {
         let item = item
         UIView.animate(withDuration: 0.6,
         animations: {

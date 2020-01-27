@@ -383,17 +383,6 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="840"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOQ-WF-iqa">
-                                <rect key="frame" x="86" y="390" width="261" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="  Отключить рекламу  ">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="switchOffBannerAction:" destination="YWF-CS-ntf" eventType="touchUpInside" id="dYX-rh-Oeb"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yw8-6B-QH7">
                                 <rect key="frame" x="77" y="516" width="261" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -407,7 +396,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdl-g8-hWx">
-                                <rect key="frame" x="77" y="590" width="261" height="55"/>
+                                <rect key="frame" x="77" y="390" width="261" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Оценить приложение">
@@ -416,18 +405,6 @@
                                 <connections>
                                     <action selector="rateApp:" destination="YWF-CS-ntf" eventType="touchUpInside" id="9iC-lh-HrT"/>
                                     <action selector="switchOffBannerAction:" destination="YWF-CS-ntf" eventType="touchUpInside" id="7GW-Zo-Zxp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeK-bg-gob">
-                                <rect key="frame" x="77" y="664" width="261" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Поделиться">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="shareAction:" destination="YWF-CS-ntf" eventType="touchUpInside" id="J14-FY-DSk"/>
-                                    <action selector="switchOffBannerAction:" destination="YWF-CS-ntf" eventType="touchUpInside" id="Ba5-Oi-2hx"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tzB-Pe-DRD">
@@ -453,21 +430,24 @@
                                     <action selector="writeToDeveloperAction:" destination="YWF-CS-ntf" eventType="touchUpInside" id="LOI-2n-Obc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="75 RUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUp-Ft-kKf">
-                                <rect key="frame" x="270" y="398" width="58" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeK-bg-gob">
+                                <rect key="frame" x="77" y="579" width="261" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Поделиться">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareAction:" destination="YWF-CS-ntf" eventType="touchUpInside" id="J14-FY-DSk"/>
+                                    <action selector="switchOffBannerAction:" destination="YWF-CS-ntf" eventType="touchUpInside" id="Ba5-Oi-2hx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80007070300000005" green="0.79989200829999996" blue="0.80784422160000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="NAf-c4-ZlK"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Настройки" image="info.circle" catalog="system" id="hzS-5W-hrO"/>
                     <connections>
-                        <outlet property="imageOutlet" destination="hfO-iG-kQi" id="jqp-Fa-nRh"/>
-                        <outlet property="switchOffBanner" destination="mOQ-WF-iqa" id="EOH-NK-mk7"/>
                         <outlet property="writeTodeveloper" destination="AQB-FD-3ir" id="GXh-bg-qJa"/>
                     </connections>
                 </viewController>

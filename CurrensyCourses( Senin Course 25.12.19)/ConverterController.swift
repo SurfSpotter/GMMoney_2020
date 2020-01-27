@@ -10,6 +10,9 @@ import UIKit
 
 class ConverterController: UIViewController {
     
+    
+   
+    
     @IBOutlet weak var buttonDone: UIBarButtonItem!
     
     @IBOutlet weak var labelCoursesForDate: UILabel!
@@ -75,8 +78,6 @@ class ConverterController: UIViewController {
         labelCoursesForDate.text = Model.shared.currentDate!
         navigationItem.rightBarButtonItem = nil
         
-        OtherViewController.shared.animationOfButton(item: buttonFrom)
-        OtherViewController.shared.animationOfButton(item: buttonTo)
         
     }
     
