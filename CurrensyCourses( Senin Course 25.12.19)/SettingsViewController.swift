@@ -21,7 +21,7 @@ class SettingsViewController: UIViewController {
     @IBAction func showCourses(_ sender: Any) {
         Model.shared.loadXmlFile(date: datePicker.date)
         dismiss(animated: true, completion: nil)
-        print ("This is DatePicker Date \(datePicker.date)")
+        //print ("This is DatePicker Date \(datePicker.date)")
     }
     
     @IBAction func pushCancelButton(_ sender: Any) {

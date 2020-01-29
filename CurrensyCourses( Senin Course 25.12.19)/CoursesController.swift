@@ -17,6 +17,7 @@ class CoursesController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Model.shared.loadXmlFile(date: nil)
         RateManager.ShowRateItAppByCount() // Оценить приложение
         print(UserDefaults.standard.integer(forKey: "runCount"))
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "startLoadingXML"), object: nil, queue: nil) { (Notification) in
