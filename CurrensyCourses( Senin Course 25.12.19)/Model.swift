@@ -71,7 +71,7 @@ class Model: NSObject, XMLParserDelegate {
         let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.libraryDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0]+"/data.xml"  //поиск пути к файлу
         
         if FileManager.default.fileExists(atPath: path) {  // проверяет есть ли такой файл
-            print(path)
+            //print(path)
             return path
             
         }

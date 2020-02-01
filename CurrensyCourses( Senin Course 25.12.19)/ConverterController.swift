@@ -87,6 +87,10 @@ class ConverterController: UIViewController {
         buttonTo.setTitle(Model.shared.toCurrency.CharCode!, for: UIControl.State.normal)
         imageFrom.image = UIImage(named: Model.shared.fromCurrency.CharCode!)
         imageTo.image = UIImage(named: Model.shared.toCurrency.CharCode!)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            self.animationOfButton(item: self.buttonFrom)
+            self.animationOfButton(item: self.buttonTo)
+        }
     }
     
     @IBAction func pushDoneButton(_ sender: Any) {
@@ -112,9 +116,19 @@ class ConverterController: UIViewController {
         return roundedAmount
     }
     
+    func animationOfButton(item: UIButton ) {
+    let item = item
+    UIView.animate(withDuration: 0.6,
+                   animations: {
+                    item.transform = CGAffineTransform(scaleX: 0.01, y: 0.95)
+    },
+                   completion: { _ in
+                    UIView.animate(withDuration: 0.6) {
+                        item.transform = CGAffineTransform.identity
+                    }
+    })
     
-    
-}
+    }}
 
 extension ConverterController: UITextFieldDelegate {      // Show Button Done when textFrom is Should Begining
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {

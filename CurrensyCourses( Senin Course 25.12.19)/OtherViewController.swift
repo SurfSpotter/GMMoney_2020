@@ -51,7 +51,6 @@ class OtherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
         
         
@@ -62,6 +61,9 @@ class OtherViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+    }
 
     fileprivate func changeStyleOfButtons(Button: UIButton) {
             let button = Button
@@ -70,7 +72,7 @@ class OtherViewController: UIViewController {
         button.layer.cornerRadius = 20.0
            button.clipsToBounds = true
        }
-    func animation(item: UIImageView) {
+    func animationImage(item: UIImageView) {
         let item = item
         UIView.animate(withDuration: 0.6,
         animations: {
@@ -82,16 +84,16 @@ class OtherViewController: UIViewController {
             }
         })
     }
-    fileprivate func animationOfImage(item: UIImageView ) {
+    private func animationOfButton(item: UIButton ) {
         let item = item
         UIView.animate(withDuration: 0.6,
-        animations: {
-            item.transform = CGAffineTransform(scaleX: 0.01, y: 0.95)
+                       animations: {
+                        item.transform = CGAffineTransform(scaleX: 0.01, y: 0.95)
         },
-        completion: { _ in
-            UIView.animate(withDuration: 0.6) {
-                item.transform = CGAffineTransform.identity
-            }
+                       completion: { _ in
+                        UIView.animate(withDuration: 0.6) {
+                            item.transform = CGAffineTransform.identity
+                        }
         })
     }
     
