@@ -21,6 +21,7 @@ class OtherViewController: UIViewController {
     
     @IBAction func writeToDeveloperAction(_ sender: Any) {
         showMailComposer()
+        
     }
     
     
@@ -37,8 +38,19 @@ class OtherViewController: UIViewController {
     
     
     @IBAction func shareAction(_ sender: Any) {
-        if let image = UIImage(named: "iconCircleAngles") {
-            let vc = UIActivityViewController(activityItems: [image], applicationActivities: [])
+        if let imageForSharing = UIImage(named: "iconCircleAngles") {
+            let urlForSharing : NSURL = NSURL(string: "http://surfspotdevelopco.tilda.ws")!
+            let desctriptionForSharing = "Скачай вот это приложение \(urlForSharing) уверен тебе понравится!"
+            
+            
+            let vc = UIActivityViewController(activityItems: [imageForSharing, desctriptionForSharing], applicationActivities: [])
+            vc.excludedActivityTypes = [ .airDrop,
+                                         .assignToContact,
+                                         .openInIBooks,
+                                         .markupAsPDF,
+                                         .print,
+                                         
+        ]
             present(vc, animated: true)
         }
 
@@ -51,7 +63,16 @@ class OtherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let item = imageOutlet
+UIView.animate(withDuration: 0.6,
+               animations: {
+                item?.transform = CGAffineTransform(scaleX: 0.01, y: 0.95)
+},
+               completion: { _ in
+                UIView.animate(withDuration: 0.6) {
+                    item?.transform = CGAffineTransform.identity
+                }
+})
         
         
         
@@ -59,6 +80,7 @@ class OtherViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+    
         
     }
     
@@ -110,13 +132,55 @@ class OtherViewController: UIViewController {
         }
         let composer = MFMailComposeViewController()
         composer.mailComposeDelegate = self
-        composer.setToRecipients(["alexei.evg@gmail.com", "mukasor@gmail.com"])
+        composer.setToRecipients(["surfspotdevelop@gmail.com"])
         composer.setSubject("World Money")
-        composer.setMessageBody("HI your App is very good, but if you want make your App more better..", isHTML: false)
+        composer.setMessageBody("Привет! Ваше приложение просто супер!, но я бы добавил...(напишите ваше пожелание)", isHTML: false)
         present(composer, animated: true)
+        
+    
+        
     }
-}
+    
+    }
+
 
 extension OtherViewController: MFMailComposeViewControllerDelegate {
-    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        let alertSendMailOk = UIAlertController.init(title: "Сообщение отправлено!", message: "Благодарим за вас за помощь!", preferredStyle: .alert)
+        alertSendMailOk.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (UIAlertAction) in
+            
+        }))
+        //present(alertSendMailOk, animated: true)
+        
+        
+        if let _ = error {
+            // show Error Alert
+            print ("error when sent email!")
+            controller.dismiss(animated: true, completion: nil)
+            let alertError = UIAlertController.init(title: "Ошибка при отправке", message: "Повторите попытку позже.", preferredStyle: .alert)
+                       alertError.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (UIAlertAction) in
+                           
+                       }))
+                       present(alertError, animated: true)
+        }
+        
+        switch  result {
+        case .cancelled:
+            print("cancelled")
+            controller.dismiss(animated: true, completion: nil)
+        case .failed:
+            print("failed")
+        case .saved:
+            print("saved")
+        case .sent:
+            print ("sent")
+            
+           
+            
+        default:
+            controller.dismiss(animated: true, completion: nil)
+        }
+       controller.dismiss(animated: true, completion: nil)
+       
+    }
 }

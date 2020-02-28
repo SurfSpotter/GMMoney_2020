@@ -25,7 +25,7 @@ class RateManager {
     }
     class func ShowRateItAppByCount() {
         let count = UserDefaults.standard.integer(forKey: "runCount")
-        if count == 2 {
+        if count == 10 {
             UserDefaults.standard.set(count + 1, forKey: "runCount")
             DispatchQueue.main.asyncAfter(deadline: .now() + 19) {
                 SKStoreReviewController.requestReview()
@@ -35,6 +35,8 @@ class RateManager {
     class func ShowRateItApp() {
            UserDefaults.standard.set(0 , forKey: "runCount")
            SKStoreReviewController.requestReview()
+        
+    
 }
 }
 
