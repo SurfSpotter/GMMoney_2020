@@ -63,16 +63,7 @@ class OtherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let item = imageOutlet
-UIView.animate(withDuration: 0.6,
-               animations: {
-                item?.transform = CGAffineTransform(scaleX: 0.01, y: 0.95)
-},
-               completion: { _ in
-                UIView.animate(withDuration: 0.6) {
-                    item?.transform = CGAffineTransform.identity
-                }
-})
+      
         
         
         
@@ -80,7 +71,6 @@ UIView.animate(withDuration: 0.6,
     }
     
     override func viewDidAppear(_ animated: Bool) {
-    
         
     }
     
@@ -96,12 +86,14 @@ UIView.animate(withDuration: 0.6,
        }
     func animationImage(item: UIImageView) {
         let item = item
-        UIView.animate(withDuration: 0.6,
+        
+        UIImageView.animate(withDuration: 0.6,
         animations: {
             item.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+            
         },
         completion: { _ in
-            UIView.animate(withDuration: 0.6) {
+            UIImageView.animate(withDuration: 0.6) {
                 item.transform = CGAffineTransform.identity
             }
         })
@@ -133,7 +125,7 @@ UIView.animate(withDuration: 0.6,
         let composer = MFMailComposeViewController()
         composer.mailComposeDelegate = self
         composer.setToRecipients(["surfspotdevelop@gmail.com"])
-        composer.setSubject("World Money")
+        composer.setSubject("GMMoney")
         composer.setMessageBody("Привет! Ваше приложение просто супер!, но я бы добавил...(напишите ваше пожелание)", isHTML: false)
         present(composer, animated: true)
         

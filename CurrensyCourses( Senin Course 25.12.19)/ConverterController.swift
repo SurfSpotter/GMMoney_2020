@@ -55,7 +55,8 @@ class ConverterController: UIViewController {
    
     
     @IBAction func TextFromEditingChanged(_ sender: Any) {
-         let amount = Double(textFrom.text!)
+        self.textFrom.keyboardType = UIKeyboardType.decimalPad
+        let amount = Double((textFrom.text!).replacingOccurrences(of: ",", with: ".") )
         if amount != nil {
             textTo.text = String(roundedTo0x00(amount: amount!))
         }
