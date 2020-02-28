@@ -163,7 +163,7 @@
                                     <action selector="showCourses:" destination="ih8-hX-Dpy" eventType="touchUpInside" id="xS0-QG-IAC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Внимание. Если дата выпадает на выходной или праздичный день, будут загружены ближайшие актуальные курсы" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URD-4P-9D9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Внимание! Если дата выпадает на выходной или праздичный день, будут загружены ближайшие актуальные курсы" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URD-4P-9D9">
                                 <rect key="frame" x="0.0" y="731" width="404" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="266" id="qun-99-xdP"/>
@@ -497,7 +497,7 @@
                                     <action selector="switchOffBannerAction:" destination="YWF-CS-ntf" eventType="touchUpInside" id="7GW-Zo-Zxp"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tzB-Pe-DRD">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzB-Pe-DRD">
                                 <rect key="frame" x="0.0" y="-458" width="414" height="44"/>
                                 <color key="barTintColor" red="0.80007070300000005" green="0.79989200829999996" blue="0.80784422160000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <items>
@@ -546,6 +546,8 @@
                             <constraint firstItem="2wk-Xh-Fmd" firstAttribute="leading" secondItem="NAf-c4-ZlK" secondAttribute="leading" id="26C-Ib-eHR"/>
                             <constraint firstItem="NAf-c4-ZlK" firstAttribute="bottom" secondItem="ZeK-bg-gob" secondAttribute="bottom" constant="100" id="3Kh-Rj-Ym1"/>
                             <constraint firstItem="AQB-FD-3ir" firstAttribute="top" secondItem="hfO-iG-kQi" secondAttribute="bottom" constant="30" id="6eB-KW-xIv"/>
+                            <constraint firstItem="tzB-Pe-DRD" firstAttribute="leading" secondItem="2wk-Xh-Fmd" secondAttribute="leading" id="7oK-cJ-wBa"/>
+                            <constraint firstItem="tzB-Pe-DRD" firstAttribute="top" secondItem="zzG-Km-aK1" secondAttribute="top" constant="-458" id="Exh-V6-9EW"/>
                             <constraint firstItem="Yw8-6B-QH7" firstAttribute="centerX" secondItem="zdl-g8-hWx" secondAttribute="centerX" id="FWr-Zx-0VA"/>
                             <constraint firstItem="zdl-g8-hWx" firstAttribute="top" secondItem="AQB-FD-3ir" secondAttribute="bottom" constant="30" id="PL1-kU-0jJ"/>
                             <constraint firstItem="zdl-g8-hWx" firstAttribute="centerX" secondItem="hfO-iG-kQi" secondAttribute="centerX" id="Yyz-3e-yAF"/>
@@ -592,7 +594,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="World" width="512" height="512"/>
+        <image name="World" width="256" height="256"/>
         <image name="backGround" width="512" height="512"/>
         <image name="buttonConvert" width="64" height="64"/>
         <image name="calendar" catalog="system" width="64" height="52"/>

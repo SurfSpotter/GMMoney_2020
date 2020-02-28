@@ -448,5 +448,129 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA11C8D9-1750-444A-AA47-D601198338DB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/OtherViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "OtherViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "DA11C8D9-1750-444A-AA47-D601198338DB - a19dba8c88b1fae"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrensyCourses__Senin_Course_25_12_19_.OtherViewController.imageOutlet.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "CurrensyCourses( Senin Course 25.12.19)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeichigarskikh/Documents/Xcode%20and%20Swift/CurrensyCourses(%20Senin%20Course%2025.12.19)/CurrensyCourses(%20Senin%20Course%2025.12.19)/OtherViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "DA11C8D9-1750-444A-AA47-D601198338DB - a19dba8c88b1fae"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrensyCourses__Senin_Course_25_12_19_.OtherViewController.imageOutlet.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "CurrensyCourses( Senin Course 25.12.19)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeichigarskikh/Documents/Xcode%20and%20Swift/CurrensyCourses(%20Senin%20Course%2025.12.19)/CurrensyCourses(%20Senin%20Course%2025.12.19)/OtherViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "DA11C8D9-1750-444A-AA47-D601198338DB - a19dba8c88b1fae"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrensyCourses__Senin_Course_25_12_19_.OtherViewController.imageOutlet.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "CurrensyCourses( Senin Course 25.12.19)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeichigarskikh/Documents/Xcode%20and%20Swift/CurrensyCourses(%20Senin%20Course%2025.12.19)/CurrensyCourses(%20Senin%20Course%2025.12.19)/OtherViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "DA11C8D9-1750-444A-AA47-D601198338DB - e4403588434d0e8a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrensyCourses__Senin_Course_25_12_19_.OtherViewController.imageOutlet.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CurrensyCourses( Senin Course 25.12.19)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeichigarskikh/Documents/Xcode%20and%20Swift/CurrensyCourses(%20Senin%20Course%2025.12.19)/CurrensyCourses(%20Senin%20Course%2025.12.19)/OtherViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "DA11C8D9-1750-444A-AA47-D601198338DB - 468a37d98ecadb8a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrensyCourses__Senin_Course_25_12_19_.OtherViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CurrensyCourses__Senin_Course_25_12_19_.OtherViewController"
+                  moduleName = "CurrensyCourses( Senin Course 25.12.19)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeichigarskikh/Documents/Xcode%20and%20Swift/CurrensyCourses(%20Senin%20Course%2025.12.19)/CurrensyCourses(%20Senin%20Course%2025.12.19)/OtherViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "258">
+               </Location>
+               <Location
+                  uuid = "DA11C8D9-1750-444A-AA47-D601198338DB - 765ad831c2998d1e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrensyCourses__Senin_Course_25_12_19_.OtherViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CurrensyCourses__Senin_Course_25_12_19_.OtherViewController&gt;"
+                  moduleName = "CurrensyCourses( Senin Course 25.12.19)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeichigarskikh/Documents/Xcode%20and%20Swift/CurrensyCourses(%20Senin%20Course%2025.12.19)/CurrensyCourses(%20Senin%20Course%2025.12.19)/OtherViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7A90A6C-CEB6-4034-BA1C-AC2BC2002C8A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrensyCourses( Senin Course 25.12.19)/OtherViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "OtherViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
